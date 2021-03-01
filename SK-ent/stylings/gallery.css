@@ -1,0 +1,170 @@
+* {
+  color: #7A694E;
+  font-family: 'Calibri';
+}
+
+body {
+  background-color: #f9f8f6; 
+}
+
+.bg-box {
+  margin: auto;
+  margin-bottom: 25px;
+  max-width: 1200px;
+  padding: 0px 30px 50px 30px;
+  border-left: 4px solid #E1E0E0;
+  border-right: 4px solid #E1E0E0;
+}
+
+.banner {
+  max-width: 1200px;
+  height: auto;
+  margin: auto; 
+}
+
+.banner-img {
+  background-image: url("../pictures/jiminfly.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  border-radius: 3px;
+}
+
+h1 {
+  font-size: 45px !important;
+  font-weight:bold !important;
+  text-align:center;
+  margin: 0 15px !important;
+  margin-bottom: 30px !important;
+  color: #25272E;
+} 
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 35px !important;
+    }
+  }
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+.nav-bar ul{ 
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin:5px;
+  margin-bottom: 20px;
+  padding-left: 0;
+}
+
+.nav-bar li a {
+  display: block;
+  background-color: #E1E0E0;
+  color:#25272E;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  align-items: stretch;
+  border-radius: 3px;
+  margin: 2px;
+}
+
+li a:hover {
+  background-color: #C6C5C1;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  font-family: 'Roboto', sans-serif;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  font-size: 13px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.gallery-container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  margin: auto 30px auto 30px;
+  padding: 0 20px 15px;
+  border-bottom: 2px solid #E1E0E0;
+}
+
+.gallery-container img {
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: 3px;;
+  height: 175px;
+  background-color:#E1E0E0;
+}
+
+.gallery-container img:hover {
+  transform:scale(1.05);
+  border: none;
+}
+
+@media (max-width: 900px) {
+  .gallery-container{
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    }
+  }
+
+  @media  (max-width: 900px) {
+    .gallery-container img {
+      height: 135px;
+      width: 100%;
+    }
+  }
+
+@media  (min-width: 600px) {
+  .gallery-container{
+  gap: 15px;
+  margin: auto;
+  }
+}
+
+  @media  (min-width: 600px) {
+   .gallery-container img {
+      width: 100%;
+   }
+  }
+
+
+@media (max-width: 600px) {
+  .gallery-container{
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: auto;
+  }
+}
+
+  @media (max-width: 600px) {
+    .gallery-container img {
+      width: 100%;
+      height: 85px;
+    }
+  }
+
