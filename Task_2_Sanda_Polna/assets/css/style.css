@@ -702,7 +702,7 @@ h4 {
   z-index: 10;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .back-to-top{
     margin:0 3px;
     top: 90%;
