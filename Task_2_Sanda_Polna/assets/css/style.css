@@ -702,7 +702,7 @@ h4 {
   z-index: 10;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .back-to-top{
     margin:0 3px;
     top: 90%;
@@ -715,17 +715,11 @@ h4 {
   margin-top: 34px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .back-to-top p{
     display: none;
   }
 }
-
-
-.dropbtn::after {
-  background-image: url("../img/X.png");
-}
-
 
 .modal {
   position: fixed;
