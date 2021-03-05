@@ -19,7 +19,7 @@ a {
 }
 
 a li:hover {
-  border-bottom: solid 5px #FFA800;
+  border-bottom: solid 4px #FFA800;
 }
 
 ul {
@@ -55,8 +55,14 @@ ul {
   padding: 0 27px;
   border: none;
   width: 100%;
-  margin-top: -27px;
+  margin-top: -20px;
+
 }
+
+.dropbtn {
+    height: 20px;
+}
+
 @media only screen and (max-width: 900px) {
   .dropbtn {
     display: block;
@@ -73,9 +79,9 @@ ul {
   position: absolute;
   background-color: #FFFFFF;
   width: 100%;
-z-index: 4;
-margin-top: 15px;
-
+  z-index: 4;
+  /* margin-top: 0px; */
+  padding-bottom: 50px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -83,13 +89,18 @@ margin-top: 15px;
   flex-direction: column;
   height: auto;
   justify-content: center;  text-align: center;
-  box-shadow: 0px 10px 10px -10px;
+  box-shadow: 0px 10px 12px -12px;
+
 }
 
 .dropdown-content li{
-margin:18px;
+  margin:18px;
   font-size: 18px;
   display: inline-block;
+}
+
+.dropdown-content li :hover {
+  border-bottom: solid 5px #FFA800;
 }
 
 .language {
@@ -167,7 +178,7 @@ margin:18px;
 
 .play-button {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -209,7 +220,6 @@ margin:18px;
 @media only screen and (max-width: 600px) {
   .text-wrap p {
     font-size: 12px;
-
   }
 }
 
@@ -230,6 +240,25 @@ margin:18px;
   justify-content: center;
   height: 100%;
   width: 100%;
+}
+
+.container-mini {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-mini {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .col img{
@@ -274,8 +303,6 @@ margin:18px;
   object-fit: fill;
   padding: 0;
   margin: 0;
-  /* display: flex;
-  flex-direction: column; */
   min-width: 168;
 }
 
@@ -320,7 +347,6 @@ margin:18px;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 
 .questions-wrap h2 {
   margin-bottom: 30px; 
@@ -405,7 +431,6 @@ label:focus,
   margin: 0;
 }
 
-
 .form-check-input:checked {
   border-color:#FFA800;  
   background-color: #FFA800;
@@ -472,18 +497,20 @@ h4 {
 .logos {
   margin-top: 79px;
   background-color: transparent;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  grid-template-rows: auto; */
   justify-content: space-evenly;
   align-items: center;
   justify-items: center;  
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 900px) {
   .logos {
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(2, 1fr); */
     margin-top: 50px;
   }
 }
@@ -672,7 +699,7 @@ h4 {
   align-content: center;
   position: sticky;
   top: 0;
-  z-index: 9990;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 600px) {
@@ -698,3 +725,59 @@ h4 {
 .dropbtn::after {
   background-image: url("../img/X.png");
 }
+
+
+.modal {
+  position: fixed;
+  z-index: 9000;
+  top: 0;
+  left: 0;
+  background-color:rgba(47, 72, 88, 0.9);
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.modal.modal-show {
+  display: block;
+}
+
+.modal-content {
+  background-color: transparent;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  margin-top: 7%;
+  border: none;
+  padding: 0;
+}
+
+.close {
+  align-self: flex-end;
+  position: absolute;
+  top: 0;
+  margin: -50px 0 auto auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .close{
+    margin: auto;
+  }
+}
+
+
+.close:hover {
+  cursor: pointer;
+}
+
+.vid-size {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
