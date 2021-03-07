@@ -20,6 +20,14 @@ a {
 
 a li:hover {
   border-bottom: solid 4px #FFA800;
+  color: initial;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 900px) {
+  a:hover{
+    font-weight: bold;
+  }
 }
 
 ul {
@@ -38,7 +46,6 @@ ul {
   font-size: 1.125vw;
 }
 
-
 .dropdown {
   position: relative;
   display: none;
@@ -55,7 +62,7 @@ ul {
   padding: 0 27px;
   border: none;
   width: 100%;
-  margin-top: -20px;
+  margin-top:27px;
   height: 20px;
 }
 
@@ -69,13 +76,13 @@ ul {
     float:right;
 }
 
-
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #FFFFFF;
   width: 100%;
   z-index: 14;
+  padding-top: 30px;
   padding-bottom: 50px;
 }
 
@@ -135,6 +142,7 @@ ul {
 
 .top-logo{
   padding-left:20px;
+  float: left;
 }
 
 .top-logo img {
@@ -148,7 +156,7 @@ ul {
     width: 78px;
     height: 49px;
     left:0;
-    margin-left: 50px;
+    margin-left: 0px;
   }
 }
 
@@ -165,7 +173,7 @@ ul {
 }
 
 .rip img{
-   width: 100%; 
+  width: 100%; 
   height: 100%;
   min-height:91px;
 }
@@ -290,7 +298,6 @@ ul {
   max-height: 328px;  
 }
 
-
 #one, #two, #three, #four
  {
   width: 100%;
@@ -410,10 +417,10 @@ label:focus,
 .btn:active,
 .btn.active
 {
-    outline:0px !important;
-    -webkit-appearance:none;
-    box-shadow: none !important;
-    border: none;
+  outline:0px !important;
+  -webkit-appearance:none;
+  box-shadow: none !important;
+  border: none;
 }
 
 .form-control:valid {
@@ -423,6 +430,10 @@ label:focus,
 
 .row.g-3 {
   margin: 0;
+}
+
+.form-check-input:empty {
+  background-color: rgba(196, 196, 196, 0.4); 
 }
 
 .form-check-input:checked {
@@ -581,6 +592,11 @@ h4 {
   text-align: left;
 }
 
+#footer-left:hover li{
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
 #footer-middle {
   line-height: 2;
   text-align: left; 
@@ -734,9 +750,16 @@ h4 {
   width: 80%;
   height: 80%;
   margin: auto;
-  margin-top: 7%;
+  margin-top: 5%;
   border: none;
   padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-content {
+    height: 70%;
+    margin: 25% auto auto;
+  }
 }
 
 .close {
