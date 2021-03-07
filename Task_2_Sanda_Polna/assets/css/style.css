@@ -56,11 +56,7 @@ ul {
   border: none;
   width: 100%;
   margin-top: -20px;
-
-}
-
-.dropbtn {
-    height: 20px;
+  height: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -79,8 +75,7 @@ ul {
   position: absolute;
   background-color: #FFFFFF;
   width: 100%;
-  z-index: 4;
-  /* margin-top: 0px; */
+  z-index: 14;
   padding-bottom: 50px;
 }
 
@@ -89,8 +84,7 @@ ul {
   flex-direction: column;
   height: auto;
   justify-content: center;  text-align: center;
-  box-shadow: 0px 10px 12px -12px;
-
+  /* box-shadow: 0px 10px 12px -12px; */
 }
 
 .dropdown-content li{
@@ -108,14 +102,14 @@ ul {
   justify-content: center;
 }
 
-.x-btn {
+/* .x-btn {
   display: block;
   float: right;
   position: absolute;
   top:0;
   right:0;
   margin: 0 15px;
-}
+} */
 
 .menu {
   position: absolute;
@@ -665,7 +659,6 @@ h4 {
   margin-top: 51px;
 }
 
-
 .add {
   display: none;
 }
@@ -753,12 +746,17 @@ h4 {
   margin: -50px 0 auto auto;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .close{
     margin: auto;
   }
 }
 
+@media only screen and (max-width: 900px) {
+  .close img{
+    width: 70%;
+  }
+}
 
 .close:hover {
   cursor: pointer;
@@ -769,9 +767,10 @@ h4 {
   height: 100%;
 }
 
-
-
-
-
+@media only screen and (max-width: 600px) {
+  .vid-size{
+    height: 70%;
+  }
+}
 
 
