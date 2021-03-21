@@ -1,4 +1,4 @@
-const btns = document.querySelectorAll(".play-button");
+const btns = document.querySelectorAll(".view");
 const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
 
@@ -21,3 +21,10 @@ document.addEventListener("keydown", (event) => {
   }
 })
 
+const more = document.getElementById("more");
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+more.style.display = 'block';
+button.style.display = 'none';
+});
