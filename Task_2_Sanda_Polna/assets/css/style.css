@@ -334,10 +334,6 @@ ul {
   }
 }
 
-/* .double-images {
-  max-height: 328px;  
-} */
-
 #one, #two, #three, #four
  {
   width: 100%;
@@ -395,7 +391,7 @@ ul {
   display: block;
   text-align: center;
   margin-bottom: 80px;
-width: 394px;
+  width: 394px;
 }
 
 .question-box2 {
@@ -484,6 +480,26 @@ label:focus,
 
 .form-wrap h1 {
   margin-bottom: 35px; 
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  margin-top: -98px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.success h4 {
+  font-size: 24px;
+  color: #FFA800;}
+
+.success p {
+  font-size: 18px;
+  margin-top: 30px;
+  color: #FFA800;
 }
 
 h1, h2 {
