@@ -211,7 +211,7 @@ h1 {
   max-width: 652px;
   color: #2F4858;
   display: block;
-  margin: 0 auto 158px;
+  margin: 0 auto 0;
   padding:0 20px;
 }
 
@@ -239,8 +239,12 @@ label:focus,
   border: none;
 }
 
+.form-control {
+  background-color: rgba(196, 196, 196, 0.4)!important;
+}
+
 .form-control:valid {
-  background-color: rgba(196, 196, 196, 0.4)!important;  
+  background-color: rgba(196, 196, 196, 0.4)!important;
   color:#2F4858!important;
 }
 
@@ -263,6 +267,31 @@ label:focus,
 
 .form-wrap h1 {
   margin-bottom: 35px;   text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-wrap h2 {
+    font-size: 24px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.success h4 {
+  font-size: 24px;
+  color: #FFA800;}
+
+.success p {
+  font-size: 18px;
+  margin-top: 30px;
+  color: #FFA800;
 }
 
 .footer-wrap {
