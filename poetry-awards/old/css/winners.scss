@@ -1,0 +1,516 @@
+$box-border: 7px;
+
+$colors: (
+  accent1: #cfc39b,
+  text1: rgb(233, 233, 233),
+  nav-dark: #1B1F25, 
+  // nav-dark: #25274D,
+  nav-light: #161929,
+  true-blue: #2A345D,
+  golden: #d1a95f
+);
+
+@function color($color-code){
+  @return map-get($colors, $color-code)
+};
+
+$mobile: 840px;
+@mixin mobile {
+  @media (max-width: #{$mobile}){
+    @content;
+  }
+}
+
+// font-family: 'Alegreya', serif;
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Kurale', serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto Slab', serif;
+
+* {
+  font-family: 'Kurale', serif;
+color: color(text1);
+margin: 0;
+padding: 0;
+}
+
+h1 {
+  color: color(nav-dark);
+  font-size: 45px;
+  font-family: 'Roboto Slab', serif;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  #bg {
+  background-color: #3E435E;background: #343744;
+  background-color: #313246;
+  clip-path: polygon(25% 0%, 100% 0%, 0 40%, 0 10%);
+  background-attachment:fixed;
+  width: 100%;
+  height: 100% !important;
+  position: absolute;
+  z-index: -1;
+  
+  @include mobile {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    }
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #2d313b;
+  background-color: #292d3d;
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+ 
+}
+
+nav {
+  
+  .side1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 10px;
+    background-color: #1C3144;
+    background-color: color(nav-dark);
+    font-size: 18px;
+    gap: 15px;
+  }
+
+    li {
+      font-family: 'oswald', serif;
+      color: #ac8560;
+      color: color(golden);
+      ;
+    }
+
+  li:hover {
+    color: rgb(226, 194, 105);
+    color: rgb(150, 134, 82);
+    color: rgb(194, 181, 137);
+  }
+
+  .top {
+    background-color: color(nav-light);
+    padding: 20px 0 25px;  
+    background-image: url("../media/notebook.png");
+  
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+.side2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 0 10px;
+  font-size: 20px;
+  li {
+    font-family: 'oswald', serif;
+    color: #ac8560;
+    color: color(golden);
+    margin-bottom: 25px;
+    ;
+  }
+
+li:hover {
+  color: rgb(226, 194, 105);
+  color: rgb(150, 134, 82);
+  color: rgb(194, 181, 137);
+}
+}
+
+
+
+h2 {
+  color: color(accent1);
+
+}
+
+.this-years-winner {
+
+  .winner-name {
+   font-size: 55px;
+   font-weight: bold; 
+   color: color(golden);
+   font-family: 'Cormorant Garamond', serif;
+   margin: 0 auto 50px;
+   display: block;
+   text-align: center;
+   animation: fadeIn 1.7s ease-in-out;
+ }
+}
+
+.decors {
+  display: flex;
+  justify-content: space-between;
+  opacity: .4;
+  width: 100%;
+  margin-top: 160px;
+}
+
+.fancy2 {
+  transform: rotateY(180deg);
+}
+
+.fancy1,
+.fancy2 {
+  height: 90px;
+}
+
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.left {
+  width: 70%;
+ margin: 0 auto;
+}
+
+.right {
+  width: 20%;
+  margin: 0;
+  background-color: color(nav-dark);
+  // padding: 0;
+}
+
+.gallery-img {   
+  margin: auto;
+  padding: 0;  
+  img {
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
+
+    filter: grayscale(0.3);
+  }
+}
+
+.gallery-img:hover {
+  img {
+  cursor: pointer;
+      filter: grayscale(0);
+  }
+}
+
+.gallery-link {
+  margin: auto;
+  padding: 0;     height: 120px;
+  width: 100%;
+  object-fit: cover;
+
+  filter: grayscale(0.3);
+}
+
+
+.random-poem {
+  background-color: color(nav-dark);
+  // box-shadow: 4px 4px 7px #747474;
+  box-shadow: 4px 4px 7px #181717;
+  background-image: url("../media/notebook.png");
+  // padding: 30px;
+  margin-top: 20px;
+  text-align: center;
+  
+  h3, p {
+    color: color(nav-dark);
+  }
+  .author {
+    text-align: right;
+  }
+}
+
+.pins {
+  display: flex;
+  justify-content: space-between;
+   i {
+    color: color(nav-dark);
+    font-size: 22px;
+    margin: -135px -45px -45px;
+    filter: drop-shadow(2px 3px 2px #555555);
+   }
+}
+
+.pins-2 {
+  display: flex;
+  justify-content: space-between;
+   i {
+    color: color(nav-dark);
+    font-size: 22px;
+    margin: -20px 0 -25px;
+    filter: drop-shadow(2px 3px 2px #555555);
+   }
+}
+
+
+.winner {
+  display: flex;
+  justify-content: center;
+ 
+
+  .winner-about {
+    margin-top: 50px;
+    display: block;
+    text-align: left;
+    padding: 20px 70px 50px;  
+    background-color: color(nav-dark);
+    background-image: url("../media/notebook.png");
+    box-shadow: 4px 4px 7px #181717;
+    border-radius: 1px;
+
+    .cv-name {
+      text-align: center;
+      font-size: 26px;
+      margin: 40px auto;
+      color: color(nav-dark);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+  p {
+    color: color(nav-dark);
+  }
+
+
+
+    .cv {
+      text-align: justify;
+      animation: fadeIn 2s ease-in-out;
+    }
+  }
+
+  .winner-img {
+    img {
+      width: 300px;
+      height: 400px;
+      object-fit:cover;
+      float:left;
+      border: 10px solid white;
+      margin: 0 20px 20px 0;
+      animation: jackInTheBox 1.5s ease-in-out;
+    }
+  }
+}  
+
+.curators {
+  margin: 50px auto;
+  margin-bottom: 100px;
+  width: 75%;
+  background-color: color(nav-dark);
+  padding: 50px 30px;
+  background-color: color(nav-dark);
+  background-image: url("../media/notebook.png");
+  box-shadow: 4px 4px 7px #181717;
+
+  p {
+    color:  color(nav-dark);
+  }
+
+  .curator-intro {
+    font-size: 22px;
+    color: color(nav-dark);
+    text-align: center;
+  }
+
+  .quote {
+    margin: 20px;
+    text-align: justify;
+    border-top: 3px solid color(nav-light);
+    padding-top: 10px;
+    
+
+    .quote-text {
+      margin: 15px;
+      line-height: 25px;
+      font-style: italic;
+    }
+
+    .author {
+      text-align: right;
+      margin-top: 15px;
+    }
+  }
+}
+
+.fa-home {
+  color: color(golden);
+}
+
+.poem-teaser {
+  background-color: color(nav-dark);
+  color: color(nav-dark);
+  padding: 5px 0;
+  background-color: color(nav-dark);
+  box-shadow: 4px 4px 7px #181717;
+  background-image: url("../media/notebook.png");
+  opacity: 0.5;
+  margin-top: 20px;
+    p {
+      color: color(nav-dark);
+      margin: 15px;
+    }
+}
+
+
+.interview-teaser
+ {
+  background-color: color(nav-dark);
+  width:100%;
+  background-image: url("../media/notebook.png");
+  margin-top: 20px;
+  p {
+    color: color(nav-dark);
+  }
+}
+
+a {
+  padding: 0;
+}
+
+.video-self iframe,
+.video-other iframe {
+  height: 300px;
+  width: 500px;
+  margin: 0;
+}
+
+
+
+.article-teaser {
+  margin: 20px;
+  padding: 15px;
+  width: 40%;
+  background-color: color(nav-dark);
+  text-align: center;
+}
+
+.bottom-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.video-self,
+.video-other {
+  margin: 20px auto;
+  padding: 15px;
+  width: 80%;
+  background-color: color(nav-dark);
+  text-align: left;
+  display: flex;
+}
+
+.video-description {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 20px 0;
+  }
+
+}
+
+.more-btn {
+  align-items: flex-end;
+  align-self: flex-end;
+  text-align: left;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.animate__jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}

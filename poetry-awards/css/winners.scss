@@ -1,0 +1,334 @@
+$box-border: 7px;
+
+$colors: (
+  nav-dark: #1B1F25,
+  true-blue: #2A345D,
+  golden: #d1a95f,
+  paper: #E0E0E0,
+  light-brown: #c0985b,
+  mid-brown: #705a39,
+  old-mid: #292d3d,
+  nav-mid: #212838,
+);
+
+@function color($color-code){
+  @return map-get($colors, $color-code)
+};
+
+$mobile: 840px;
+@mixin mobile {
+  @media (max-width: #{$mobile}){
+    @content;
+  }
+}
+
+// font-family: 'Alegreya', serif;
+// font-family: 'Cormorant Garamond', serif;
+// font-family: 'Kurale', serif;
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Roboto Slab', serif;
+
+* {
+  font-family: 'Roboto Slab', serif;
+  color: color(nav-dark);
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: color(nav-dark);
+  font-size: 45px;
+  font-family: 'Roboto Slab', serif;
+}
+
+section {
+  height: 100%;
+  width: 100%;
+  position: relative;
+
+  #bg {
+  background-color: #3d4661;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background-attachment:fixed;
+  width: 100%;
+  height: 100% !important;
+  position: absolute;
+  z-index: -1;
+  opacity: .07;
+  }
+
+  #bg-2 {
+    background-color: #3d4661;
+    clip-path: polygon(0 0, 90% 0, 0 100%, 100% 100%, 100% 60%, 70% 100%, 0 100%);
+
+    background-attachment:fixed;
+    width: 100%;
+    height: 100% !important;
+    position: absolute;
+    z-index: -1;
+    opacity: .07;
+  }
+  
+  @include mobile {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+
+    
+  }
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #292d3d;
+  background-color: color(nav-dark);
+  background-image: url("../media/notebook.png");
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+nav {
+  cursor: default;
+
+  .side1 {
+    text-align: center;
+    padding: 10px 0 14px 0;
+    background-color: color(nav-dark);
+  }
+
+  h2 {
+    color: color(paper);
+    font-size: 26px;   
+    font-family: 'Roboto Slab', serif;
+  }
+
+  .top {
+    padding: 20px 0 25px;  
+    background-image: url("../media/notebook.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+
+.side2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 0 0;
+}
+
+  li {
+    padding: 0 0 2px 15px;
+    margin: 35px 35px 0;  
+    color: color(mid-brown);
+    border-left: 5px solid color(mid-brown);
+    font-size: 22px;
+  }
+
+  li:hover {
+    border-left: 9px solid color(mid-brown);
+    font-weight: bold;
+}
+
+.this-years-winner {
+
+  .winner-name {
+   font-size: 65px;
+   font-weight: bold; 
+   font-family: 'Cormorant Garamond', serif;
+   margin: 10px auto 30px;
+   display: block;
+   text-align: center;
+   animation: fadeIn 1.7s ease-in-out;
+ }
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 4px;
+  border-bottom: 4px dotted color(nav-dark);
+}
+
+.left {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.right {
+  width: 20%;
+  padding-top: 20px;
+  border-left: 4px dotted color(nav-dark);
+}
+
+.winner {
+  display: flex;
+  justify-content: center;
+ 
+  .winner-about {
+    margin-top: 20px;
+    display: block;
+    text-align: left;
+    padding: 20px 20px 80px;  
+    font-size: 20px;
+
+    .cv {
+      text-align: justify;
+      font-size: 16px;
+      animation: fadeIn 3s ease-in-out;
+    }
+  }
+
+  .winner-img {
+    img {
+      width: 300px;
+      height: 400px;
+      object-fit:cover;
+      float:left;
+      border: 10px solid white;
+      margin: 0 20px 20px 0;
+      animation: jackInTheBox 1.5s ease-in-out;
+    }
+  }
+}  
+
+.part-2 {
+  width: 90%;
+  margin: 50px auto;
+} 
+
+.curators {
+  margin: 0 auto;
+  width: 80%;
+  padding: 50px 40px 100px;
+
+  p {
+    color: color(nav-dark);
+  }
+
+  .curator-intro {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .quote {
+    margin: 20px auto 25px;
+    text-align: justify;
+    padding-top: 10px;
+
+    .quote-text {
+      margin: 15px;
+      line-height: 25px;
+      font-style: italic;
+      font-size: 20px;
+    }
+
+    .author {
+      text-align: left;
+      margin-top: 15px;
+      font-size: 25px;
+    }
+  }
+}
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.animate__fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.animate__jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
+  color: color(mid-brown);
+  border-top: 4px dotted color(nav-dark);
+}
