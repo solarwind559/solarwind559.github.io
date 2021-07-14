@@ -74,14 +74,13 @@ h2, li {
   line-height: 30px;
 }
 
-.cool {
-  // text-shadow: 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue), 0 0 2px color(dark-blue);
-
-}
-
 .text {
   margin: 50px auto 50px 25px;
   animation: slideInLeft 1.5s;
+}
+
+.text-2 {
+  animation: slideInLeft 2s;
 }
 
 @-webkit-keyframes slideInLeft {
