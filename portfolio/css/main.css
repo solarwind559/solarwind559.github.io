@@ -72,8 +72,10 @@ h2, li {
 }
 
 .text-2 {
-  -webkit-animation: slideInLeft 2s;
-          animation: slideInLeft 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation: slideInLeft 1.5s;
+          animation: slideInLeft 1.5s;
 }
 
 @-webkit-keyframes slideInDown {
