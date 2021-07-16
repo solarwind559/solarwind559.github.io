@@ -1,0 +1,22 @@
+.info {
+  font-size: 20px;
+  margin: 20px 20px;
+  
+  @include desktop {
+    font-size: 40px;
+    margin: 40px 25px;
+    }
+
+  a {
+    color: rgb(175, 243, 255);
+    font-style: italic;
+  }
+}
+  
+.info,
+i {color: white;}
+
+.message-me {
+  color: white;
+  padding: 30px 20px 50px 20px;
+}
