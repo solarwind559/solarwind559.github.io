@@ -59,9 +59,6 @@ function addItem(e) {
     // append child
     list.appendChild(element);
 
-    // display alert
-    displayAlert("Item added to the list!");
-
     // show container
     container.classList.add("show-container");
 
