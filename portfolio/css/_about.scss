@@ -6,8 +6,6 @@ li {
 .about {
   padding: 30px 20px 50px 20px;
   color: white;
-  background: rgb(130,207,232);
-  background: linear-gradient(15deg, rgb(141, 210, 233) 0%, rgb(0, 102, 236) 100%);
 
   @include desktop {
     font-size: 20px;
@@ -16,7 +14,7 @@ li {
     } 
 
   a {
-  color: rgb(175, 243, 255);
+  color: #e90482;
   font-style: italic;
   }
 }
@@ -25,7 +23,28 @@ p {
   margin-top: 25px;
   font-weight: 500;
 
-  @include desktop {
-    font-size: 20px;
-    }
+  @include desktop {font-size: 20px;}
 }
+
+.wrap-it {
+  background-image: url(../img/no-bg-no-highlight.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+
+  .no-bg {display: none;}
+
+  @include desktop {
+    background-image: none;
+    display: flex;
+    justify-content: space-between;
+  
+    .no-bg {
+      align-self: flex-end;
+      width: 500px;
+      display: block;
+    }
+  }
+}
+
+
