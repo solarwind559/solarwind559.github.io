@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ice Worlds</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=PT+Sans&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="banner-img"></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="howto.html">How to help</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div class="content">
+  <h1>About me</h1>
+  <img class="my-img" src="pictures/images.jpg" alt="my image">
+  <p> &nbsp; &nbsp; My name is Penguin and I do penguin stuff.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras enim orci, sollicitudin non ipsum a, ullamcorper interdum lacus.  
+  Suspendisse a lacus eget est vehicula auctor sit amet et tellus. <br><br> 
+  &nbsp; &nbsp; Suspendisse eget sem malesuada, tempus urna vitae, tristique lectus. Praesent in metus ante. Etiam porta a erat et pellentesque.
+   Aliquam facilisis elementum lorem quis ultricies. Phasellus magna velit, consequat nec urna eget, varius aliquet turpis. In non est fermentum, auctor dolor in, ultrices urna. Vestibulum porttitor mauris in arcu pharetra, tempor viverra mi auctor. 
+  Mauris dapibus ex fringilla ipsum mollis, id semper ipsum ultricies. Quisque sit amet turpis convallis, iaculis dui ut, dignissim nisl. <br><br>
+  &nbsp; &nbsp; Sed nisi ligula, sollicitudin ut diam et, imperdiet sollicitudin tortor. Pellentesque dapibus quis dui quis vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque quam risus, volutpat in nulla tempor, volutpat vulputate ex. <br><br>
+  &nbsp; &nbsp; Vivamus gravida finibus dignissim. Nunc vel efficitur felis, vel vulputate urna. Aenean nec luctus augue. Pellentesque tincidunt molestie posuere. Morbi mauris metus, tincidunt at justo ac, iaculis laoreet elit. Nullam nec nunc at massa pulvinar consequat. Suspendisse vehicula ante in enim placerat, ac dictum lorem dapibus.
+  </p>
+</div> 
+
+<div id='map' style='width: 75%; height: 350px;'></div>
+
+<div class=contacts>
+  <h2>Contacts:</h2>
+    <div class=box>
+      <ul>
+        <li>E-mail: pengiun@antarctica.com</li>
+        <li>Address: Antarctica</li>
+        <li>Phone number: 123</li>
+      </ul>
+    </div>
+</div>
+
+<footer>©2021 All rights to the penguins</footer>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic29sYXJ3aW5kNTU5IiwiYSI6ImNrbDhkc2d0aDBleHgzMXBzc2h3MXBqbXUifQ.YlllaqZNUHK-x5oRA0QusA';
+  var map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+      center: [-158.378181, -77.757025], // starting position [lng, lat]
+      zoom: 3 // starting zoom
+  });
+  // Set options
+  var marker = new mapboxgl.Marker({
+  color: "#0e1b34",
+  draggable: true
+  }).setLngLat([-158.378181, -77.757025])
+  .addTo(map);
+  </script>
+</body>
+</html>
