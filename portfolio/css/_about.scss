@@ -1,6 +1,7 @@
 li {
   font-size: 27px;
   font-weight: 800;
+  margin: 0 15px;
 }
 
 .about {
@@ -14,7 +15,7 @@ li {
     } 
 
   a {
-  color: #e90482;
+  color: color(hot-pink);
   font-style: italic;
   }
 }
@@ -27,10 +28,7 @@ p {
 }
 
 .wrap-it {
-  background-image: url(../img/no-bg-no-highlight.png);
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
+  overflow: hidden;
 
   .no-bg {display: none;}
 
@@ -41,10 +39,96 @@ p {
   
     .no-bg {
       align-self: flex-end;
-      width: 500px;
+      width: 360px;
       display: block;
+      animation: slideInRight 3s;
     }
   }
 }
 
+.icns {
+  margin: auto;
+  height: 60px;
 
+  @include desktop {
+    height: 80px;
+  } 
+}
+
+.type {
+  margin-top: 0;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+
+  @include desktop {
+    font-size: 14px;
+  } 
+}
+
+.front,
+.back {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding-bottom: 20px;
+  margin: 0 30px;
+
+  @include desktop {
+    gap: 20px;
+    padding-bottom: 30px;
+  } 
+}
+
+.xd,
+.js,
+.css,
+.sass,
+.html,
+.php,
+.sql,
+.bs,
+.wp {text-align: center;}
+
+.grouped {
+  background-color: black;
+  padding-bottom: 50px;
+
+  h2 {
+    padding: 65px 0;
+    color: #283886;
+    text-align: center;
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate__slideInRight {
+  -webkit-animation-name: slideInRight;
+  animation-name: slideInRight;
+}

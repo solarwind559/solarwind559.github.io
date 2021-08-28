@@ -20,3 +20,72 @@ i {color: white;}
   color: white;
   padding: 30px 20px 50px 20px;
 }
+
+.pointing {
+  position:fixed;
+  bottom: 58px;
+  left: 15px;
+  right: 0;
+  animation: slideInOut 2.5s;
+  visibility: hidden;
+}
+
+.contact {
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+@-webkit-keyframes slideInOut {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes slideInOut {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  50% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+.animate__slideInOut {
+  -webkit-animation-name: slideInOut;
+  animation-name: slideInOut;
+}
