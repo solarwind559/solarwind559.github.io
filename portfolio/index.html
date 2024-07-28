@@ -4,137 +4,242 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <title>Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/b6aa1f1735.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b6aa1f1735.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="content" id="top">  
-  <section class="content-2">
 
-    <nav>
+  <nav>
+    <div class="container">
       <ul>
-        <a href="about.html"><li>About</li></a>
-        <a href="contact.html"><li>Contact</li></a>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#mywork">My Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </nav>
-
-  <div class="main">
-    <div class="text">
-      <h1 id="first">Hey,</h1><br>
-      <h1 id="second">I'm Sandy </h1>     <br>
-        <h2 id="third">I design and <br>
-        develop Front-End <br>
-        & WordPress <br>
-        websites</h2>
     </div>
-  </div>
-    <div class="mywork">
-      <h2>My Projects</h2>
-      <div class="project-list">
-        <div class="project">
-          <h3>S-Korean dancers</h3>
-          <a href="http://sk-entertainment.ezyro.com/"><div class="project-bg dancers"></div></a>
-          <p class="proj-about">My first project, made from scratch. You can view different galleries, filter profiles and play videos from a pop-up window. For its News blog section, it displays information fetched from a database.</p>
-          <p>CSS <br>
-            BootStrap <br>
-            JavaScript <br>
-            JQuery <br>
-            PHP <br>
-            MySQL
-          </p>
-          <div class="demo">
-            <a href="http://sk-entertainment.ezyro.com/"><button>View Demo</button></a>
-            <a href="https://github.com/solarwind559/SK-entertainment"><button>View Code</button></a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Austra Šokolāde</h3>
-          <a href="http://austra-sokolade.epizy.com/"><div class="project-bg sokolade"></div></a>
-          <p class="proj-about">Made into a WordPress theme from a Figma design. It uses Advanced Custom Fields and different speed optimization tools. Transferred to a live server. And on top, I added some neat CSS animations.</p>
-          <p>SCSS <br>
-            JavaScript <br>
-            WordPress <br>
-            PHP <br>
-            MySQL
-          </p>
-          <div class="demo">
-            <a href="http://austra-sokolade.epizy.com/"><button>View Demo</button></a>
-            <a href="https://github.com/solarwind559/austra-sokolade"><button>View Code</button></a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>SparkleHeart</h3>
-          <div class="project-bg sparkle"></div>   
-          <p class="proj-about">Internship test project, made from a Figma design. Purely Front-End website.</p>  
-          <p>CSS <br>
-            BootStrap <br>
-            JavaScript <br>
-            JQuery <br>
-            Google Maps API
-          </p>
-          <div class="demo">
-            <a href="https://solarwind559.github.io/sparkle-heart/"><button>View Demo</button></a>
-            <a href="https://github.com/solarwind559/solarwind559.github.io/tree/master/sparkle-heart"><button>View Code</button></a>
-          </div>
-        </div>
+  </nav>
 
-        <div class="project">
-          <h3>Ice Worlds</h3>
-          <a href="https://solarwind559.github.io/ice_worlds/"><div class="project-bg ice"></div></a>  
-          <p class="proj-about">A smaller test project, trying out Mapbox API and submitting data to a database.</p>
-          <p>CSS <br>
-            JavaScript <br>
-            Mapbox API <br>
-            PHP <br>
-            MySQL
-          </p>
-          <div class="demo">
-            <a href="https://solarwind559.github.io/ice_worlds/"><button>View Demo</button></a>
-            <a href="https://github.com/solarwind559/ice_worlds"><button>View Code</button></a>
-          </div>
-        </div>  
-        <div class="project">
-          <h3>Saldumlācis</h3>
-          <div class="project-bg saldum"></div>     
-          <p class="proj-about">Made from an Adobe XD design into a WordPress theme. Using ACF, speed optimization tools and a database.</p>
-          <p>SCSS <br>
-            WordPress <br>
-            PHP <br>
-            MySQL
-          </p>
-          <div class="demo">
-            <a href="http://saldumlacis.epizy.com/"><button>View Demo</button></a>
-            <a href="https://github.com/solarwind559/saldumlacis_WP"><button>View Code</button></a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>React Swiper</h3>
-            <a href="https://solarwind559.github.io/carousel_swiper/"><div class="project-bg swiper"></div></a>
-            <p class="proj-about">Small test task for learning React, Babel and Webpack. This project uses Swiper.</p>
-            <p>CSS <br>
-              React JS <br>
-              Webpack
-            </p>
-          <div class="demo">
-            <a href="https://solarwind559.github.io/carousel_swiper/"><button>View Demo</button></a>
-            <a href="https://github.com/solarwind559/carousel_swiper/tree/master"><button>View Code</button></a>
-          </div>
-        </div>
+  <section class="content-2">
+    <div class="main container">
+      <div class="text">
+        <p class="mb-0 first">Hey,</p>
+        <h2 class="second">I'm Sandy :) </h2>
+        <h3 class="third"> & I'm a <span class="fourth">Web Developer</span></h3>
       </div>
-      <div class="up">
-        <a href="#top"><i class="fas fa-arrow-alt-circle-up"></i></a>
-      </div>
-    
     </div>
-
+    <div class="wrap-it">
+      <img class="no-bg" src="img/no-bg-no-highlight.png" alt="">
+    </div>
   </section>
 
+  <section class="grouped content">
+    <div class="container">
+      <h2 class="text-center pt-5 pb-3">My Skills</h2>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="html text-center m-3">
+          <img class="icns" src="img/html5-original.svg" alt="">
+          <p class="type">HTML</p>
+        </div>
+        <div class="css text-center m-3">
+          <img class="icns" src="img/css3-original.svg" alt="">
+          <p class="type">CSS</p>
+        </div>
+        <div class="sass text-center m-3">
+          <img class="icns" src="img/sass-original.svg" alt="">
+          <p class="type">SASS</p>
+        </div>
+        <div class="bs text-center m-3">
+          <img class="icns" src="img/bootstrap-plain.svg" alt="">
+          <p class="type">Bootstrap</p>
+        </div>
+        <div class="js text-center m-3">
+          <img class="icns" src="img/javascript-original.svg" alt="">
+          <p class="type">JavaScript</p>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="php text-center m-3">
+          <img class="icns" src="img/php-plain.svg" alt="">
+          <p class="type">PHP</p>
+        </div>
+        <div class="php text-center m-3">
+          <img class="icns" src="img/laravel.png" alt="">
+          <p class="type">Laravel</p>
+        </div>
+        <div class="sql text-center m-3">
+          <img class="icns" src="img/mysql-original-wordmark.svg" alt="">
+          <p class="type">MySQL</p>
+        </div>
+        <div class="wp text-center m-3">
+          <img class="icns" src="img/wordpress-plain.svg" alt="">
+          <p class="type">WordPress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content" id="about">
+    <div class="container">
+      <h2 class="text-center mt-5 mb-3">Allow me to introduce myself</h2>
+      <div class="row">
+        <div class="col-10 col-xl-8 mx-auto mb-5">
+          <p>I’m a web developer with about 2 years of experience in website development. While I specialize in custom WordPress theme development, I enjoy taking on a variety of tasks. I have experience working with Shopify and Joomla, and I’ve created full-scale dynamic websites using Laravel Blade.
+            <br>
+            I can help you create a functional front-end website from any design using HTML, CSS, and JavaScript. For more dynamic pages, I can work on your website’s back-end with PHP, Laravel, and databases.            <br>
+          </p>       
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mywork" class="content">
+    <div class="mywork pb-3">
+      <h2 class="pt-5 pb-3">My Work</h2>
+      <div class="project-list row no-margin">
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Lopez&DeFilippo</h3>
+          <a href="https://lopezdefilippo.com/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg ldf"></div>
+          </a>
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://lopezdefilippo.com/" target="_blank" rel="noopener noreferrer">View Page</a>
+            <!-- <a class="btn btn-outline-white" href="#">Code</a> -->
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Dental Staffing Reviews</h3>
+          <a href="https://dentalstaffingreviews.com/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg dsr"></div>
+          </a>
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://dentalstaffingreviews.com/" target="_blank" rel="noopener noreferrer">View Page</a>
+            <!-- <a class="btn btn-outline-white" href="#">Code</a> -->
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>RMFW</h3>
+          <a href="https://rmfwlaw.com/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg rmfw"></div>
+          </a>
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://rmfwlaw.com/" target="_blank" rel="noopener noreferrer">View Page</a>
+            <!-- <a class="btn btn-outline-white" href="#">Code</a> -->
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Andrew S Bisom</h3>
+          <a href="https://andrewsbisom.com/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg asb"></div>
+          </a>
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://andrewsbisom.com/" target="_blank" rel="noopener noreferrer">View Page</a>
+            <!-- <a class="btn btn-outline-white" href="#">Code</a> -->
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Big Al's Roofing</h3>
+          <a href="https://www.bigalsroofing.com/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg bigals"></div>
+          </a>
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://www.bigalsroofing.com/" target="_blank" rel="noopener noreferrer">View Page</a>
+            <!-- <a class="btn btn-outline-white" href="#">Code</a> -->
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Tērvetes Alus</h3>
+          <a href="https://tervetesal.lv/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg ta"></div>
+          </a>
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://tervetesal.lv/" target="_blank" rel="noopener noreferrer">View Page</a>
+            <!-- <a class="btn btn-outline-white" href="https://github.com/solarwind559/tervetesal-theme target="_blank" rel="noopener noreferrer">Code</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content pb-3">
+    <div class="mywork">
+      <h2 class="pt-4 mb-3">Personal Projects</h2>
+      <div class="project-list row no-margin">
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Crossfit Box</h3>
+          <a href="https://github.com/solarwind559/crossfit-box" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg cfb"></div>
+          </a>
+          <p>Built with Laravel 11</p>
+          <div class="demo">
+            <!-- <a class="btn btn-outline-white" href="https://github.com/solarwind559/crossfit-box" target="_blank" rel="noopener noreferrer">Demo</a> -->
+            <a class="btn btn-outline-white" href="https://github.com/solarwind559/crossfit-box" title="View with screenshots">View Code</a>
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Library Management</h3>
+          <a href="https://github.com/solarwind559/Library-Management" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg lib"></div>
+          </a>
+          <p>PHP OOP, interaction between database tables</p>
+          <div class="demo">
+            <!-- <a class="btn btn-outline-white" href="http://your-library-management-site.service.com" target="_blank" rel="noopener noreferrer">Demo</a> -->
+            <a class="btn btn-outline-white" href="https://github.com/solarwind559/Library-Management" title="View with screenshots">View Code</a>
+          </div>
+        </div>
+        <div class="project col-12 col-md-3 col-xl-4 mx-auto">
+          <h3>Swiper</h3>
+          <a href="https://solarwind559.github.io/carousel_swiper/" target="_blank" rel="noopener noreferrer">
+            <div class="project-bg swiper"></div>
+          </a>
+          <p>Small test task for React Swiper</p>            
+          <div class="demo">
+            <a class="btn btn-outline-white" href="https://solarwind559.github.io/carousel_swiper/" target="_blank" rel="noopener noreferrer">Demo</a>
+            <a class="btn btn-outline-white" href="https://github.com/solarwind559/carousel_swiper">View Code</a>
+          </div>
+        </div>
+        <p class="pb-3">...and more on <a href="https://github.com/solarwind559" class="more-link">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="info content pt-3 pb-5" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <h2>Links</h2>
+        <a class="btn btn-outline-custom" href="https://www.linkedin.com/in/spolna292/" target="_blank" rel="noopener noreferrer" title="Contact me on LinkedIn">LinkedIn</a>
+        <a class="btn btn-outline-custom" href="https://github.com/solarwind559" target="_blank" rel="noopener noreferrer" title="View my GitHub profile">GitHub</a>
+        <a class="btn btn-outline-custom" href="mailto:s.polna@yahoo.com" target="_blank" rel="noopener noreferrer" title="Email me at s.polna@yahoo.com">Email Me</a>
+        <a class="btn btn-outline-custom" href="files/SP_Resume_english_2024.pdf" download title="Download my CV">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="up">
+    <a id="top"><i class="fas fa-arrow-alt-circle-up"></i></a>
+  </div>
+
   <footer>@me</footer>
-</div>
+
+  <script>
+      window.addEventListener('scroll', function() {
+          const scrollToTopButton = document.getElementById('top');
+          if (window.scrollY > 200) {
+              scrollToTopButton.style.display = 'block';
+          } else {
+              scrollToTopButton.style.display = 'none';
+          }
+      });
+
+      document.getElementById('top').addEventListener('click', function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+  </script>
 
 </body>
 </html>

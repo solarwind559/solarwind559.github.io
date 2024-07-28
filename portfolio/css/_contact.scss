@@ -1,6 +1,6 @@
 .info {
   font-size: 20px;
-  margin: 20px 20px;
+  margin: 40px 20px;
   
   @include desktop {
     font-size: 40px;
@@ -9,12 +9,12 @@
 
   a {
     color: #e90482;
-    font-style: italic;
+    // font-style: italic;
   }
 }
   
 .info,
-i {color: white;}
+i {color: color(hot-pink);}
 
 .message-me {
   color: white;

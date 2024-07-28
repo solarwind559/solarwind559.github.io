@@ -1,9 +1,3 @@
-li {
-  font-size: 27px;
-  font-weight: 800;
-  margin: 0 15px;
-}
-
 .about {
   padding: 30px 20px 50px 20px;
   color: white;
@@ -49,6 +43,7 @@ p {
 .icns {
   margin: auto;
   height: 60px;
+  margin-bottom: 5px;
 
   @include desktop {
     height: 80px;
@@ -89,14 +84,17 @@ p {
 .php,
 .sql,
 .bs,
-.wp {text-align: center;}
+.wp {text-align: center;
+&:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out .2s;
+}}
 
 .grouped {
   background-color: black;
   padding-bottom: 50px;
 
   h2 {
-    padding: 65px 0;
     color: #283886;
     text-align: center;
   }
