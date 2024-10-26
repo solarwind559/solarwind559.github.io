@@ -177,6 +177,9 @@ h2 {
   filter: grayscale(0);
   cursor: pointer;
 }
+.mywork .project .wy {
+  background-image: url(../img/screenshotwy.png);
+}
 .mywork .project .dsr {
   background-image: url(../img/screenshotdsr.png);
 }
@@ -192,6 +195,9 @@ h2 {
 .mywork .project .rmfw {
   background-image: url(../img/screenshotrmfw.png);
 }
+.mywork .project .ks {
+  background-image: url(../img/screenshotks.png);
+}
 .mywork .project .swiper {
   background-image: url(../img/Screenshot_5.png);
 }
@@ -203,6 +209,9 @@ h2 {
 }
 .mywork .project .cfb {
   background-image: url(../img/screenshotcfb.png);
+}
+.mywork .project .spp {
+  background-image: url(../img/screenshotspp.png);
 }
 @media (min-width: 760px) {
   .mywork .project-list {
