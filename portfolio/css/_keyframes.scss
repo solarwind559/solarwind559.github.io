@@ -494,10 +494,14 @@ animation-name: slideOutRight;
 
 
 @keyframes loading {
-  from { max-width: 0; }
-  to { max-width: 100%; } /* Ensure the animation completes */
+    from { max-width: 0; }
+    to { max-width: 100%; }
 }
 
+@keyframes unloading { 
+    from { max-width: 100%; } 
+    to { max-width: 0; } 
+}
 
 @keyframes nameAnim {
   0% {

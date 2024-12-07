@@ -19,6 +19,10 @@ html {
 nav {
   background-color: black;
 
+  .unloading::before {
+    animation: unloading 0.4s ease-in-out;
+  }
+
   a {
     color: #3139a1;
     font-family: 'Courier New', Courier, monospace;
@@ -26,28 +30,21 @@ nav {
     font-size: 1.2rem;
     text-decoration: none;
     overflow: hidden;
-    transition: color 0.3s ease-in-out;
-
-    @include media-query('min', $desktop) {
-      &:hover {
-        color: color(hot-pink);
-      }
+    transition: color 0.5s ease-in-out;
     
-      &:before {
+      &::before {
         content: attr(data-content);
         position: absolute;
         overflow: hidden;
         max-width: 0;
         color: color(hot-pink);
         white-space: nowrap;
-        transition: max-width 0.3s ease-in-out;
       }
     
-      &:hover:before {
+      &:hover::before {
         max-width: 100%;
-        animation: loading 0.3s ease-in-out forwards;
+        animation: loading 0.7s ease-in-out;
       }
-    }
   }
 }
 

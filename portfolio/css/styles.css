@@ -20,6 +20,11 @@ nav {
   background-color: black;
 }
 
+nav .unloading::before {
+  -webkit-animation: unloading 0.4s ease-in-out;
+          animation: unloading 0.4s ease-in-out;
+}
+
 nav a {
   color: #3139a1;
   font-family: 'Courier New', Courier, monospace;
@@ -27,29 +32,23 @@ nav a {
   font-size: 1.2rem;
   text-decoration: none;
   overflow: hidden;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
 }
 
-@media (min-width: 760px) {
-  nav a:hover {
-    color: #e90482;
-  }
-  nav a:before {
-    content: attr(data-content);
-    position: absolute;
-    overflow: hidden;
-    max-width: 0;
-    color: #e90482;
-    white-space: nowrap;
-    -webkit-transition: max-width 0.3s ease-in-out;
-    transition: max-width 0.3s ease-in-out;
-  }
-  nav a:hover:before {
-    max-width: 100%;
-    -webkit-animation: loading 0.3s ease-in-out forwards;
-            animation: loading 0.3s ease-in-out forwards;
-  }
+nav a::before {
+  content: attr(data-content);
+  position: absolute;
+  overflow: hidden;
+  max-width: 0;
+  color: #e90482;
+  white-space: nowrap;
+}
+
+nav a:hover::before {
+  max-width: 100%;
+  -webkit-animation: loading 0.7s ease-in-out;
+          animation: loading 0.7s ease-in-out;
 }
 
 ul {
@@ -1591,7 +1590,6 @@ p {
   to {
     max-width: 100%;
   }
-  /* Ensure the animation completes */
 }
 
 @keyframes loading {
@@ -1601,7 +1599,24 @@ p {
   to {
     max-width: 100%;
   }
-  /* Ensure the animation completes */
+}
+
+@-webkit-keyframes unloading {
+  from {
+    max-width: 100%;
+  }
+  to {
+    max-width: 0;
+  }
+}
+
+@keyframes unloading {
+  from {
+    max-width: 100%;
+  }
+  to {
+    max-width: 0;
+  }
 }
 
 @-webkit-keyframes nameAnim {
