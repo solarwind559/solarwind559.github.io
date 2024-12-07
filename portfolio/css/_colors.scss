@@ -1,0 +1,9 @@
+$colors: (
+  dark-blue: #283886,
+  hot-pink: #e90482,
+  light-blue: #45e0e5,
+);
+
+@function color($color-code) {
+  @return map-get($colors, $color-code);
+}

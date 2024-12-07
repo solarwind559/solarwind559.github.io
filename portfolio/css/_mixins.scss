@@ -1,0 +1,14 @@
+$desktop: 760px;
+$tablet: 1080px;
+
+@mixin media-query($type, $size) {
+  @if $type == 'min' {
+    @media (min-width: #{$size}) {
+      @content;
+    }
+  } @else if $type == 'max' {
+    @media (max-width: #{$size}) {
+      @content;
+    }
+  }
+}
