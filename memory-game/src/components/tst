@@ -1,4 +1,0 @@
-      let cards = [
-        { id: 1, frontImage: require('@/assets/img/card1.png') },
-        { id: 2, frontImage: require('@/assets/img/card2.png') }
-      ];
